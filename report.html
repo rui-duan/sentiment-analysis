@@ -13722,7 +13722,7 @@ Remove stop words.</p>
     <span class="c1"># TODO: Determine how often each word appears in `data`. Note that `data` is a list of sentences and that a</span>
     <span class="c1">#       sentence is a list of words.</span>
     
-    <span class="n">word_count</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">Counter</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">(</span> <span class="n">data</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span> <span class="p">)))</span> <span class="c1"># A dict storing the words that appear in the reviews along with how often they occur</span>
+    <span class="n">word_count</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">Counter</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)))</span> <span class="c1"># A dict storing the words that appear in the reviews along with how often they occur</span>
 
     <span class="c1"># TODO: Sort the words found in `data` so that sorted_words[0] is the most frequently appearing word and</span>
     <span class="c1">#       sorted_words[-1] is the least frequently appearing word.</span>
