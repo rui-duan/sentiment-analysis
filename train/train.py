@@ -82,6 +82,7 @@ def train(model, train_loader, epochs, optimizer, loss_fn, device):
             output = model.forward(batch_X)
             loss = loss_fn(output, batch_y)
             loss.backward()
+            torch.nn.utils.clip_grad_norm_(model.parameters(), 0.25)
             optimizer.step()
             
             total_loss += loss.data.item()
